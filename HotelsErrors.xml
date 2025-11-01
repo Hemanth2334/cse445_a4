@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel>
+  <Hotel Rating="4.2" OptionalNote="Luxury stay">
+    <Name>Westin</Name>
+    <Address>
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Marriott</Name>
+    <Phone>602-555-8123</Phone>
+    <Address>
+      <Number>50</Number>
+      <Street>W Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+  </Hotel>
+
+  <Hotel Rating="4.0">
+    <Name>Holiday Inn</Name>
+    <Name>Holiday Inn Express</Name>
+    <Phone>480-555-9001</Phone>
+    <Address>
+      <Number>60</Number>
+      <Street>S Mill Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+</Hotel>
