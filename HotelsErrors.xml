@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels>
+  <Hotel>
+    <Name>Ocean View</Name>
+    <City>Miami</City>
+    <!-- Missing Rating element (required by schema) -->
+    <Rooms>
+      <Room>
+        <Type>Deluxe</Type>
+        <Price>220</Price>
+      </Room>
+    </Rooms>
+  </Hotel>
+
+  <!-- Wrong element name: "Roomz" instead of "Rooms" -->
+  <Hotel>
+    <Name>Mountain Inn</Name>
+    <City>Denver</City>
+    <Rating>4</Rating>
+    <Roomz>
+      <Room>
+        <Type>Standard</Type>
+        <Price>90</Price>
+      </Room>
+    </Roomz>
+  </Hotel>
+</Hotels>

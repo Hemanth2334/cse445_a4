@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels>
+  <Hotel>
+    <Name>Sunrise Resort</Name>
+    <City>Phoenix</City>
+    <Rating>4.5</Rating>
+    <Rooms>
+      <Room>
+        <Type>Deluxe</Type>
+        <Price>180</Price>
+      </Room>
+      <Room>
+        <Type>Standard</Type>
+        <Price>120</Price>
+      </Room>
+    </Rooms>
+  </Hotel>
+
+  <Hotel>
+    <Name>Grand Vista</Name>
+    <City>Tucson</City>
+    <Rating>5</Rating>
+    <Rooms>
+      <Room>
+        <Type>Suite</Type>
+        <Price>250</Price>
+      </Room>
+    </Rooms>
+  </Hotel>
+</Hotels>
