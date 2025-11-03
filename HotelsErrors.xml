@@ -1,68 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotel>
-  <!-- Wrong root element -->
-  <Hotel Rating="4.7">
-    <Name>Desert Bloom Inn</Name>
-    <Phone>602-555-1122</Phone>
-    <Phone>800-555-4433</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>25</Number>
-      <Street>W Adams St</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85003</Zip>
-    </Address>
-  </Hotel>
+<!--
+  Intentionally incorrect XML for validation testing.
+  Contains five structural and data issues.
+-->
+<HotelData>
+  <Stay Stars="4.8">
+    <Title>Desert Mirage Resort</Title>
+    <Contact>602-777-1234</Contact>
+  </Stay>
 
-  <!-- Missing required attribute NearestAirport -->
-  <Hotel Rating="4.3">
-    <Name>Sonoran Suites</Name>
-    <Phone>480-123-7788</Phone>
-    <Address>
-      <Number>910</Number>
-      <Street>S Mill Ave</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
+  <Stay>
+    <Title>Copper Sands Suites</Title>
+    <Contact>480-555-3333</Contact>
+    <Location>
+      <BuildingNo>250</BuildingNo>
+      <StreetName>S Mill Ave</StreetName>
+      <CityName>Tempe</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85281</PostalCode>
+    </Location>
+  </Stay>
 
-  <!-- Duplicate element Name -->
-  <Hotel Rating="4.8">
-    <Name>Oasis Grand</Name>
-    <Name>Duplicate Hotel</Name>
-    <Phone>520-555-9999</Phone>
-    <Address NearestAirport="Tucson International">
-      <Number>801</Number>
-      <Street>S Park Ave</Street>
-      <City>Tucson</City>
-      <State>AZ</State>
-      <Zip>85719</Zip>
-    </Address>
-  </Hotel>
+  <Stay Stars="4.0">
+    <Title>Sunstone Inn</Title>
+    <Contact>520-999-4411</Contact>
+    <Contact>520-999-4411</Contact>
+    <Contact>520-999-4411</Contact>
+    <Contact>520-999-4411</Contact>
+    <Location ClosestAirport="Tucson International">
+      <BuildingNo>50</BuildingNo>
+      <StreetName>N Park Ave</StreetName>
+      <CityName>Tucson</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85719</PostalCode>
+    </Location>
+  </Stay>
 
-  <!-- Missing closing tag -->
-  <Hotel Rating="4.0">
-    <Name>Red Rock Lodge</Name>
-    <Phone>928-221-5566</Phone>
-    <Address NearestAirport="Flagstaff Pulliam">
-      <Number>56</Number>
-      <Street>Oak Creek Rd</Street>
-      <City>Sedona</City>
-      <State>AZ</State>
-      <Zip>86336</Zip>
-  </Hotel>
+  <Stay Stars="4.3">
+    <Title>Coyote Canyon Hotel</Title>
+    <Contact>928-777-2222</Contact>
+    <Locaton ClosestAirport="Flagstaff Pulliam">
+      <BuildingNo>102</BuildingNo>
+      <StreetName>Oak Creek Rd</StreetName>
+      <CityName>Flagstaff</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>86001</PostalCode>
+    </Locaton>
+  </Stay>
 
-  <!-- Wrong element name -->
-  <Hotel Rating="4.5">
-    <Name>Broken Element Inn</Name>
-    <Phone>520-999-8844</Phone>
-    <Adress NearestAirport="Tucson International">
-      <Number>720</Number>
-      <Street>W Valencia Rd</Street>
-      <City>Tucson</City>
-      <State>AZ</State>
-      <Zip>85746</Zip>
-    </Adress>
-  </Hotel>
-</Hotel>
+  <Stay Stars="3.9">
+    <Title>Saguaro Springs</Title>
+    <Contact>602-444-9999</Contact>
+    <Location ClosestAirport="Sky Harbor International">
+      <BuildingNo>789</BuildingNo>
+      <StreetName>W Van Buren St</StreetName>
+      <CityName>Phoenix</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85009</PostalCode>
+  </Stay>
+</HotelData>
