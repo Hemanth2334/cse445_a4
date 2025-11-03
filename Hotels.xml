@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Author: Hemanth Paladugu
-  Description: Hotel information XML (valid against Hotels.xsd)
-  This file defines multiple "Stay" entries, each representing a hotel.
+  Valid Hotels XML with proper structure and element names.
+  Includes hotel rating attribute, multiple phones, and address with NearestAirport attribute.
 -->
 <Hotels>
-  <!-- Each Stay corresponds to one hotel -->
-  <Stay Stars="4.8">
-    <Title>Desert Mirage Resort</Title>
-    <!-- Multiple contact numbers allowed -->
-    <Contact>602-777-1234</Contact>
-    <Contact>800-555-9876</Contact>
-    <Location ClosestAirport="Sky Harbor International">
-      <BuildingNo>19</BuildingNo>
-      <StreetName>E Washington St</StreetName>
-      <CityName>Phoenix</CityName>
-      <StateCode>AZ</StateCode>
-      <PostalCode>85034</PostalCode>
-    </Location>
-  </Stay>
+  <Hotel Rating="4.8">
+    <Name>Desert Mirage Resort</Name>
+    <Phone>602-777-1234</Phone>
+    <Phone>800-555-9876</Phone>
+    <Address NearestAirport="Sky Harbor International">
+      <Number>19</Number>
+      <Street>E Washington St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85034</Zip>
+    </Address>
+  </Hotel>
 
-  <Stay Stars="4.5">
-    <Title>Copper Sands Suites</Title>
-    <Contact>480-555-3333</Contact>
-    <Location ClosestAirport="Mesa Gateway">
-      <BuildingNo>250</BuildingNo>
-      <StreetName>S Mill Ave</StreetName>
-      <CityName>Tempe</CityName>
-      <StateCode>AZ</StateCode>
-      <PostalCode>85281</PostalCode>
-    </Location>
-  </Stay>
+  <Hotel Rating="4.5">
+    <Name>Copper Sands Suites</Name>
+    <Phone>480-555-3333</Phone>
+    <Address NearestAirport="Mesa Gateway">
+      <Number>250</Number>
+      <Street>S Mill Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
 
-  <Stay>
-    <Title>Sunstone Inn</Title>
-    <Contact>520-999-4411</Contact>
-    <Location ClosestAirport="Tucson International">
-      <BuildingNo>50</BuildingNo>
-      <StreetName>N Park Ave</StreetName>
-      <CityName>Tucson</CityName>
-      <StateCode>AZ</StateCode>
-      <PostalCode>85719</PostalCode>
-    </Location>
-  </Stay>
+  <Hotel>
+    <Name>Sunstone Inn</Name>
+    <Phone>520-999-4411</Phone>
+    <Address NearestAirport="Tucson International">
+      <Number>50</Number>
+      <Street>N Park Ave</Street>
+      <City>Tucson</City>
+      <State>AZ</State>
+      <Zip>85719</Zip>
+    </Address>
+  </Hotel>
 
-  <Stay Stars="4.0">
-    <Title>Coyote Canyon Hotel</Title>
-    <Contact>928-777-2222</Contact>
-    <Contact>928-777-1111</Contact>
-    <Location ClosestAirport="Flagstaff Pulliam">
-      <BuildingNo>102</BuildingNo>
-      <StreetName>Oak Creek Rd</StreetName>
-      <CityName>Flagstaff</CityName>
-      <StateCode>AZ</StateCode>
-      <PostalCode>86001</PostalCode>
-    </Location>
-  </Stay>
+  <Hotel Rating="4.0">
+    <Name>Coyote Canyon Hotel</Name>
+    <Phone>928-777-2222</Phone>
+    <Phone>928-777-1111</Phone>
+    <Address NearestAirport="Flagstaff Pulliam">
+      <Number>102</Number>
+      <Street>Oak Creek Rd</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86001</Zip>
+    </Address>
+  </Hotel>
 
-  <Stay Stars="3.9">
-    <Title>Saguaro Springs</Title>
-    <Contact>602-444-9999</Contact>
-    <Location ClosestAirport="Sky Harbor International">
-      <BuildingNo>789</BuildingNo>
-      <StreetName>W Van Buren St</StreetName>
-      <CityName>Phoenix</CityName>
-      <StateCode>AZ</StateCode>
-      <PostalCode>85009</PostalCode>
-    </Location>
-  </Stay>
+  <Hotel Rating="3.9">
+    <Name>Saguaro Springs</Name>
+    <Phone>602-444-9999</Phone>
+    <Address NearestAirport="Sky Harbor International">
+      <Number>789</Number>
+      <Street>W Van Buren St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85009</Zip>
+    </Address>
+  </Hotel>
 </Hotels>
+
+
 
 
