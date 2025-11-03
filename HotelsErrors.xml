@@ -1,27 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels>
-  <Hotel>
-    <Name>Ocean View</Name>
-    <City>Miami</City>
-    <!-- Missing Rating element (required by schema) -->
-    <Rooms>
-      <Room>
-        <Type>Deluxe</Type>
-        <Price>220</Price>
-      </Room>
-    </Rooms>
+<Hotel>
+  <!-- Wrong root element -->
+  <Hotel Rating="4.7">
+    <Name>Desert Bloom Inn</Name>
+    <Phone>602-555-1122</Phone>
+    <Phone>800-555-4433</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>25</Number>
+      <Street>W Adams St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85003</Zip>
+    </Address>
   </Hotel>
 
-  <!-- Wrong element name: "Roomz" instead of "Rooms" -->
-  <Hotel>
-    <Name>Mountain Inn</Name>
-    <City>Denver</City>
-    <Rating>4</Rating>
-    <Roomz>
-      <Room>
-        <Type>Standard</Type>
-        <Price>90</Price>
-      </Room>
-    </Roomz>
+  <!-- Missing required attribute NearestAirport -->
+  <Hotel Rating="4.3">
+    <Name>Sonoran Suites</Name>
+    <Phone>480-123-7788</Phone>
+    <Address>
+      <Number>910</Number>
+      <Street>S Mill Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
   </Hotel>
-</Hotels>
+
+  <!-- Duplicate element Name -->
+  <Hotel Rating="4.8">
+    <Name>Oasis Grand</Name>
+    <Name>Duplicate Hotel</Name>
+    <Phone>520-555-9999</Phone>
+    <Address NearestAirport="Tucson International">
+      <Number>801</Number>
+      <Street>S Park Ave</Street>
+      <City>Tucson</City>
+      <State>AZ</State>
+      <Zip>85719</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Missing closing tag -->
+  <Hotel Rating="4.0">
+    <Name>Red Rock Lodge</Name>
+    <Phone>928-221-5566</Phone>
+    <Address NearestAirport="Flagstaff Pulliam">
+      <Number>56</Number>
+      <Street>Oak Creek Rd</Street>
+      <City>Sedona</City>
+      <State>AZ</State>
+      <Zip>86336</Zip>
+  </Hotel>
+
+  <!-- Wrong element name -->
+  <Hotel Rating="4.5">
+    <Name>Broken Element Inn</Name>
+    <Phone>520-999-8844</Phone>
+    <Adress NearestAirport="Tucson International">
+      <Number>720</Number>
+      <Street>W Valencia Rd</Street>
+      <City>Tucson</City>
+      <State>AZ</State>
+      <Zip>85746</Zip>
+    </Adress>
+  </Hotel>
+</Hotel>
