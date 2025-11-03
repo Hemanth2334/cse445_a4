@@ -1,127 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Author: Hemanth Paladugu
+  Description: Hotel information XML (valid against Hotels.xsd)
+  This file defines multiple "Stay" entries, each representing a hotel.
+-->
 <Hotels>
-  <Hotel Rating="4.7">
-    <Name>Desert Bloom Inn</Name>
-    <Phone>602-555-1122</Phone>
-    <Phone>800-555-4433</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>25</Number>
-      <Street>W Adams St</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85003</Zip>
-    </Address>
-  </Hotel>
+  <!-- Each Stay corresponds to one hotel -->
+  <Stay Stars="4.8">
+    <Title>Desert Mirage Resort</Title>
+    <!-- Multiple contact numbers allowed -->
+    <Contact>602-777-1234</Contact>
+    <Contact>800-555-9876</Contact>
+    <Location ClosestAirport="Sky Harbor International">
+      <BuildingNo>19</BuildingNo>
+      <StreetName>E Washington St</StreetName>
+      <CityName>Phoenix</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85034</PostalCode>
+    </Location>
+  </Stay>
 
-  <Hotel Rating="4.3">
-    <Name>Sonoran Suites</Name>
-    <Phone>480-123-7788</Phone>
-    <Address NearestAirport="Mesa Gateway">
-      <Number>910</Number>
-      <Street>S Mill Ave</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
+  <Stay Stars="4.5">
+    <Title>Copper Sands Suites</Title>
+    <Contact>480-555-3333</Contact>
+    <Location ClosestAirport="Mesa Gateway">
+      <BuildingNo>250</BuildingNo>
+      <StreetName>S Mill Ave</StreetName>
+      <CityName>Tempe</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85281</PostalCode>
+    </Location>
+  </Stay>
 
-  <Hotel>
-    <Name>Copper Canyon Hotel</Name>
-    <Phone>928-333-8765</Phone>
-    <Phone>928-333-4545</Phone>
-    <Address NearestAirport="Prescott Regional">
-      <Number>12</Number>
-      <Street>N Willow St</Street>
-      <City>Prescott</City>
-      <State>AZ</State>
-      <Zip>86301</Zip>
-    </Address>
-  </Hotel>
+  <Stay>
+    <Title>Sunstone Inn</Title>
+    <Contact>520-999-4411</Contact>
+    <Location ClosestAirport="Tucson International">
+      <BuildingNo>50</BuildingNo>
+      <StreetName>N Park Ave</StreetName>
+      <CityName>Tucson</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85719</PostalCode>
+    </Location>
+  </Stay>
 
-  <Hotel Rating="4.8">
-    <Name>Oasis Grand</Name>
-    <Phone>520-555-9999</Phone>
-    <Address NearestAirport="Tucson International">
-      <Number>801</Number>
-      <Street>S Park Ave</Street>
-      <City>Tucson</City>
-      <State>AZ</State>
-      <Zip>85719</Zip>
-    </Address>
-  </Hotel>
+  <Stay Stars="4.0">
+    <Title>Coyote Canyon Hotel</Title>
+    <Contact>928-777-2222</Contact>
+    <Contact>928-777-1111</Contact>
+    <Location ClosestAirport="Flagstaff Pulliam">
+      <BuildingNo>102</BuildingNo>
+      <StreetName>Oak Creek Rd</StreetName>
+      <CityName>Flagstaff</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>86001</PostalCode>
+    </Location>
+  </Stay>
 
-  <Hotel Rating="4.0">
-    <Name>Red Rock Lodge</Name>
-    <Phone>928-221-5566</Phone>
-    <Address NearestAirport="Flagstaff Pulliam">
-      <Number>56</Number>
-      <Street>Oak Creek Rd</Street>
-      <City>Sedona</City>
-      <State>AZ</State>
-      <Zip>86336</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel>
-    <Name>Sunset Haven</Name>
-    <Phone>602-432-2020</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>370</Number>
-      <Street>E Van Buren St</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85008</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="3.9">
-    <Name>Riverbend Resort</Name>
-    <Phone>928-654-2121</Phone>
-    <Address NearestAirport="Yuma International">
-      <Number>49</Number>
-      <Street>N Main St</Street>
-      <City>Yuma</City>
-      <State>AZ</State>
-      <Zip>85364</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.1">
-    <Name>Paloverde Place</Name>
-    <Phone>480-315-0000</Phone>
-    <Phone>480-315-0001</Phone>
-    <Address NearestAirport="Mesa Gateway">
-      <Number>115</Number>
-      <Street>E Baseline Rd</Street>
-      <City>Mesa</City>
-      <State>AZ</State>
-      <Zip>85204</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.5">
-    <Name>Cactus View Hotel</Name>
-    <Phone>520-999-8844</Phone>
-    <Address NearestAirport="Tucson International">
-      <Number>720</Number>
-      <Street>W Valencia Rd</Street>
-      <City>Tucson</City>
-      <State>AZ</State>
-      <Zip>85746</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.2">
-    <Name>Grand Mesa Suites</Name>
-    <Phone>480-777-1001</Phone>
-    <Address NearestAirport="Mesa Gateway">
-      <Number>100</Number>
-      <Street>E Main St</Street>
-      <City>Mesa</City>
-      <State>AZ</State>
-      <Zip>85201</Zip>
-    </Address>
-  </Hotel>
+  <Stay Stars="3.9">
+    <Title>Saguaro Springs</Title>
+    <Contact>602-444-9999</Contact>
+    <Location ClosestAirport="Sky Harbor International">
+      <BuildingNo>789</BuildingNo>
+      <StreetName>W Van Buren St</StreetName>
+      <CityName>Phoenix</CityName>
+      <StateCode>AZ</StateCode>
+      <PostalCode>85009</PostalCode>
+    </Location>
+  </Stay>
 </Hotels>
 
 
